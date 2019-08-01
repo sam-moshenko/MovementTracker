@@ -1,0 +1,6 @@
+framework module Pods_MovementTrackerUITests {
+  umbrella header "Pods-MovementTrackerUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

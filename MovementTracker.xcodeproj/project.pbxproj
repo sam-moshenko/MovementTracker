@@ -1,0 +1,1172 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0832126AF8D0280227E9DEEC /* Pods_MovementTrackerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D71FC132D66F2CAC0BFB32C /* Pods_MovementTrackerTests.framework */; };
+		4CF0A0D6981044A6B6D8FE19 /* Pods_MovementTrackerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6BB3B6DA8A36943AD46CD80 /* Pods_MovementTrackerUITests.framework */; };
+		62DAE62EB4A43A4D7F073C48 /* Pods_NasladdinApi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E4E5185A796DB7651FD3475 /* Pods_NasladdinApi.framework */; };
+		9F2F13E720B40F36DB27B12A /* Pods_MovementTracker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCCCEC931907430D35799ECD /* Pods_MovementTracker.framework */; };
+		DEA74A186B0608E6112E4440 /* Pods_NasladdinApiTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEDA88C9F1EBC9A1E80212E4 /* Pods_NasladdinApiTests.framework */; };
+		F450D93422F2D6EE00F5D07D /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = F450D93322F2D6EE00F5D07D /* Models.swift */; };
+		F450D93622F2DA7600F5D07D /* DictionaryCodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F450D93522F2DA7600F5D07D /* DictionaryCodable.swift */; };
+		F450D93822F2DF7400F5D07D /* BaseRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F450D93722F2DF7400F5D07D /* BaseRepository.swift */; };
+		F450D93922F2E37F00F5D07D /* NasladdinRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4D6665E22F2D43D00859371 /* NasladdinRepository.swift */; };
+		F450D93A22F2E48100F5D07D /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = F450D93322F2D6EE00F5D07D /* Models.swift */; };
+		F450D93B22F2E48300F5D07D /* BaseRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F450D93722F2DF7400F5D07D /* BaseRepository.swift */; };
+		F450D93C22F2E48600F5D07D /* DictionaryCodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F450D93522F2DA7600F5D07D /* DictionaryCodable.swift */; };
+		F450D93F22F2E71B00F5D07D /* MotionTrackerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F450D93E22F2E71B00F5D07D /* MotionTrackerViewModel.swift */; };
+		F450D94122F2E7F400F5D07D /* MotionTrackerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F450D94022F2E7F400F5D07D /* MotionTrackerViewController.swift */; };
+		F450D94322F2E8FD00F5D07D /* MotionTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F450D94222F2E8FD00F5D07D /* MotionTracker.swift */; };
+		F4B8028D22F2D00900D5B162 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B8028C22F2D00900D5B162 /* AppDelegate.swift */; };
+		F4B8029222F2D00900D5B162 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4B8029022F2D00900D5B162 /* Main.storyboard */; };
+		F4B8029422F2D00A00D5B162 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4B8029322F2D00A00D5B162 /* Assets.xcassets */; };
+		F4B8029722F2D00A00D5B162 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4B8029522F2D00A00D5B162 /* LaunchScreen.storyboard */; };
+		F4B802A222F2D00A00D5B162 /* MovementTrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B802A122F2D00A00D5B162 /* MovementTrackerTests.swift */; };
+		F4B802AD22F2D00A00D5B162 /* MovementTrackerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B802AC22F2D00A00D5B162 /* MovementTrackerUITests.swift */; };
+		F4D6663A22F2D35100859371 /* NasladdinApi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4D6663922F2D35100859371 /* NasladdinApi.framework */; };
+		F4D6664922F2D39800859371 /* NasladdinApi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4D6664022F2D39700859371 /* NasladdinApi.framework */; };
+		F4D6665022F2D39800859371 /* NasladdinApiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4D6664F22F2D39800859371 /* NasladdinApiTests.swift */; };
+		F4D6665222F2D39800859371 /* NasladdinApi.h in Headers */ = {isa = PBXBuildFile; fileRef = F4D6664222F2D39700859371 /* NasladdinApi.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F4D6665522F2D39800859371 /* NasladdinApi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4D6664022F2D39700859371 /* NasladdinApi.framework */; };
+		F4D6665622F2D39800859371 /* NasladdinApi.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F4D6664022F2D39700859371 /* NasladdinApi.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F4D6665F22F2D43D00859371 /* NasladdinRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4D6665E22F2D43D00859371 /* NasladdinRepository.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F4B8029E22F2D00A00D5B162 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F4B8028122F2D00900D5B162 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F4B8028822F2D00900D5B162;
+			remoteInfo = MovementTracker;
+		};
+		F4B802A922F2D00A00D5B162 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F4B8028122F2D00900D5B162 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F4B8028822F2D00900D5B162;
+			remoteInfo = MovementTracker;
+		};
+		F4D6664A22F2D39800859371 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F4B8028122F2D00900D5B162 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F4D6663F22F2D39700859371;
+			remoteInfo = NasladdinApi;
+		};
+		F4D6664C22F2D39800859371 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F4B8028122F2D00900D5B162 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F4B8028822F2D00900D5B162;
+			remoteInfo = MovementTracker;
+		};
+		F4D6665322F2D39800859371 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F4B8028122F2D00900D5B162 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F4D6663F22F2D39700859371;
+			remoteInfo = NasladdinApi;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F4D6665A22F2D39800859371 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				F4D6665622F2D39800859371 /* NasladdinApi.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		162481B10D09C3E2616E00C8 /* Pods-MovementTrackerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MovementTrackerTests.debug.xcconfig"; path = "Target Support Files/Pods-MovementTrackerTests/Pods-MovementTrackerTests.debug.xcconfig"; sourceTree = "<group>"; };
+		2E4E5185A796DB7651FD3475 /* Pods_NasladdinApi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NasladdinApi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4FE1E7B008CC3774DE44010E /* Pods-MovementTrackerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MovementTrackerTests.release.xcconfig"; path = "Target Support Files/Pods-MovementTrackerTests/Pods-MovementTrackerTests.release.xcconfig"; sourceTree = "<group>"; };
+		53C0B8A5C8C4214801EA1453 /* Pods-NasladdinApi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NasladdinApi.release.xcconfig"; path = "Target Support Files/Pods-NasladdinApi/Pods-NasladdinApi.release.xcconfig"; sourceTree = "<group>"; };
+		5736F2A42E294D8DCF48D08A /* Pods-NasladdinApiTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NasladdinApiTests.debug.xcconfig"; path = "Target Support Files/Pods-NasladdinApiTests/Pods-NasladdinApiTests.debug.xcconfig"; sourceTree = "<group>"; };
+		668EEBC475F4FAE742FD8E9A /* Pods-NasladdinApi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NasladdinApi.debug.xcconfig"; path = "Target Support Files/Pods-NasladdinApi/Pods-NasladdinApi.debug.xcconfig"; sourceTree = "<group>"; };
+		7A5D3D383509A41597135581 /* Pods-MovementTrackerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MovementTrackerUITests.release.xcconfig"; path = "Target Support Files/Pods-MovementTrackerUITests/Pods-MovementTrackerUITests.release.xcconfig"; sourceTree = "<group>"; };
+		7D71FC132D66F2CAC0BFB32C /* Pods_MovementTrackerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MovementTrackerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A6BB3B6DA8A36943AD46CD80 /* Pods_MovementTrackerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MovementTrackerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AEEFFDD55FF4F09C2596FCA6 /* Pods-MovementTrackerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MovementTrackerUITests.debug.xcconfig"; path = "Target Support Files/Pods-MovementTrackerUITests/Pods-MovementTrackerUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		CEDA88C9F1EBC9A1E80212E4 /* Pods_NasladdinApiTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NasladdinApiTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DBC839F520FA2C06E1B72120 /* Pods-MovementTracker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MovementTracker.debug.xcconfig"; path = "Target Support Files/Pods-MovementTracker/Pods-MovementTracker.debug.xcconfig"; sourceTree = "<group>"; };
+		DCCCEC931907430D35799ECD /* Pods_MovementTracker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MovementTracker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F09C1A272580FD6EDCD6FCB5 /* Pods-NasladdinApiTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NasladdinApiTests.release.xcconfig"; path = "Target Support Files/Pods-NasladdinApiTests/Pods-NasladdinApiTests.release.xcconfig"; sourceTree = "<group>"; };
+		F450D93322F2D6EE00F5D07D /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		F450D93522F2DA7600F5D07D /* DictionaryCodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryCodable.swift; sourceTree = "<group>"; };
+		F450D93722F2DF7400F5D07D /* BaseRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRepository.swift; sourceTree = "<group>"; };
+		F450D93E22F2E71B00F5D07D /* MotionTrackerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionTrackerViewModel.swift; sourceTree = "<group>"; };
+		F450D94022F2E7F400F5D07D /* MotionTrackerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionTrackerViewController.swift; sourceTree = "<group>"; };
+		F450D94222F2E8FD00F5D07D /* MotionTracker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionTracker.swift; sourceTree = "<group>"; };
+		F4B8028922F2D00900D5B162 /* MovementTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MovementTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4B8028C22F2D00900D5B162 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F4B8029122F2D00900D5B162 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F4B8029322F2D00A00D5B162 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F4B8029622F2D00A00D5B162 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F4B8029822F2D00A00D5B162 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F4B8029D22F2D00A00D5B162 /* MovementTrackerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MovementTrackerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4B802A122F2D00A00D5B162 /* MovementTrackerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovementTrackerTests.swift; sourceTree = "<group>"; };
+		F4B802A322F2D00A00D5B162 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F4B802A822F2D00A00D5B162 /* MovementTrackerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MovementTrackerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4B802AC22F2D00A00D5B162 /* MovementTrackerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovementTrackerUITests.swift; sourceTree = "<group>"; };
+		F4B802AE22F2D00A00D5B162 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F4D6663922F2D35100859371 /* NasladdinApi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = NasladdinApi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4D6664022F2D39700859371 /* NasladdinApi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NasladdinApi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4D6664222F2D39700859371 /* NasladdinApi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NasladdinApi.h; sourceTree = "<group>"; };
+		F4D6664322F2D39700859371 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F4D6664822F2D39700859371 /* NasladdinApiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NasladdinApiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4D6664F22F2D39800859371 /* NasladdinApiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NasladdinApiTests.swift; sourceTree = "<group>"; };
+		F4D6665122F2D39800859371 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F4D6665E22F2D43D00859371 /* NasladdinRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NasladdinRepository.swift; sourceTree = "<group>"; };
+		FB430FD16AC840FAC074AD8C /* Pods-MovementTracker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MovementTracker.release.xcconfig"; path = "Target Support Files/Pods-MovementTracker/Pods-MovementTracker.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F4B8028622F2D00900D5B162 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4D6663A22F2D35100859371 /* NasladdinApi.framework in Frameworks */,
+				9F2F13E720B40F36DB27B12A /* Pods_MovementTracker.framework in Frameworks */,
+				F4D6665522F2D39800859371 /* NasladdinApi.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4B8029A22F2D00A00D5B162 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0832126AF8D0280227E9DEEC /* Pods_MovementTrackerTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4B802A522F2D00A00D5B162 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CF0A0D6981044A6B6D8FE19 /* Pods_MovementTrackerUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4D6663D22F2D39700859371 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				62DAE62EB4A43A4D7F073C48 /* Pods_NasladdinApi.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4D6664522F2D39700859371 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4D6664922F2D39800859371 /* NasladdinApi.framework in Frameworks */,
+				DEA74A186B0608E6112E4440 /* Pods_NasladdinApiTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4CE4978B001E985735EFD16E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F4D6663922F2D35100859371 /* NasladdinApi.framework */,
+				DCCCEC931907430D35799ECD /* Pods_MovementTracker.framework */,
+				7D71FC132D66F2CAC0BFB32C /* Pods_MovementTrackerTests.framework */,
+				A6BB3B6DA8A36943AD46CD80 /* Pods_MovementTrackerUITests.framework */,
+				2E4E5185A796DB7651FD3475 /* Pods_NasladdinApi.framework */,
+				CEDA88C9F1EBC9A1E80212E4 /* Pods_NasladdinApiTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5D4EAC6C1266DDD45EA23D1A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DBC839F520FA2C06E1B72120 /* Pods-MovementTracker.debug.xcconfig */,
+				FB430FD16AC840FAC074AD8C /* Pods-MovementTracker.release.xcconfig */,
+				162481B10D09C3E2616E00C8 /* Pods-MovementTrackerTests.debug.xcconfig */,
+				4FE1E7B008CC3774DE44010E /* Pods-MovementTrackerTests.release.xcconfig */,
+				AEEFFDD55FF4F09C2596FCA6 /* Pods-MovementTrackerUITests.debug.xcconfig */,
+				7A5D3D383509A41597135581 /* Pods-MovementTrackerUITests.release.xcconfig */,
+				668EEBC475F4FAE742FD8E9A /* Pods-NasladdinApi.debug.xcconfig */,
+				53C0B8A5C8C4214801EA1453 /* Pods-NasladdinApi.release.xcconfig */,
+				5736F2A42E294D8DCF48D08A /* Pods-NasladdinApiTests.debug.xcconfig */,
+				F09C1A272580FD6EDCD6FCB5 /* Pods-NasladdinApiTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		F450D93D22F2E70000F5D07D /* MotionTracker */ = {
+			isa = PBXGroup;
+			children = (
+				F450D94222F2E8FD00F5D07D /* MotionTracker.swift */,
+				F450D93E22F2E71B00F5D07D /* MotionTrackerViewModel.swift */,
+				F450D94022F2E7F400F5D07D /* MotionTrackerViewController.swift */,
+			);
+			path = MotionTracker;
+			sourceTree = "<group>";
+		};
+		F4B8028022F2D00900D5B162 = {
+			isa = PBXGroup;
+			children = (
+				F4B8028B22F2D00900D5B162 /* MovementTracker */,
+				F4B802A022F2D00A00D5B162 /* MovementTrackerTests */,
+				F4B802AB22F2D00A00D5B162 /* MovementTrackerUITests */,
+				F4D6664122F2D39700859371 /* NasladdinApi */,
+				F4D6664E22F2D39800859371 /* NasladdinApiTests */,
+				F4B8028A22F2D00900D5B162 /* Products */,
+				5D4EAC6C1266DDD45EA23D1A /* Pods */,
+				4CE4978B001E985735EFD16E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F4B8028A22F2D00900D5B162 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F4B8028922F2D00900D5B162 /* MovementTracker.app */,
+				F4B8029D22F2D00A00D5B162 /* MovementTrackerTests.xctest */,
+				F4B802A822F2D00A00D5B162 /* MovementTrackerUITests.xctest */,
+				F4D6664022F2D39700859371 /* NasladdinApi.framework */,
+				F4D6664822F2D39700859371 /* NasladdinApiTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F4B8028B22F2D00900D5B162 /* MovementTracker */ = {
+			isa = PBXGroup;
+			children = (
+				F450D93D22F2E70000F5D07D /* MotionTracker */,
+				F4B8028C22F2D00900D5B162 /* AppDelegate.swift */,
+				F4B8029022F2D00900D5B162 /* Main.storyboard */,
+				F4B8029322F2D00A00D5B162 /* Assets.xcassets */,
+				F4B8029522F2D00A00D5B162 /* LaunchScreen.storyboard */,
+				F4B8029822F2D00A00D5B162 /* Info.plist */,
+			);
+			path = MovementTracker;
+			sourceTree = "<group>";
+		};
+		F4B802A022F2D00A00D5B162 /* MovementTrackerTests */ = {
+			isa = PBXGroup;
+			children = (
+				F4B802A122F2D00A00D5B162 /* MovementTrackerTests.swift */,
+				F4B802A322F2D00A00D5B162 /* Info.plist */,
+			);
+			path = MovementTrackerTests;
+			sourceTree = "<group>";
+		};
+		F4B802AB22F2D00A00D5B162 /* MovementTrackerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F4B802AC22F2D00A00D5B162 /* MovementTrackerUITests.swift */,
+				F4B802AE22F2D00A00D5B162 /* Info.plist */,
+			);
+			path = MovementTrackerUITests;
+			sourceTree = "<group>";
+		};
+		F4D6664122F2D39700859371 /* NasladdinApi */ = {
+			isa = PBXGroup;
+			children = (
+				F4D6664222F2D39700859371 /* NasladdinApi.h */,
+				F450D93322F2D6EE00F5D07D /* Models.swift */,
+				F4D6665E22F2D43D00859371 /* NasladdinRepository.swift */,
+				F450D93722F2DF7400F5D07D /* BaseRepository.swift */,
+				F450D93522F2DA7600F5D07D /* DictionaryCodable.swift */,
+				F4D6664322F2D39700859371 /* Info.plist */,
+			);
+			path = NasladdinApi;
+			sourceTree = "<group>";
+		};
+		F4D6664E22F2D39800859371 /* NasladdinApiTests */ = {
+			isa = PBXGroup;
+			children = (
+				F4D6664F22F2D39800859371 /* NasladdinApiTests.swift */,
+				F4D6665122F2D39800859371 /* Info.plist */,
+			);
+			path = NasladdinApiTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		F4D6663B22F2D39700859371 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4D6665222F2D39800859371 /* NasladdinApi.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		F4B8028822F2D00900D5B162 /* MovementTracker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F4B802B122F2D00A00D5B162 /* Build configuration list for PBXNativeTarget "MovementTracker" */;
+			buildPhases = (
+				05B876EC4205BC485C97450B /* [CP] Check Pods Manifest.lock */,
+				F4B8028522F2D00900D5B162 /* Sources */,
+				F4B8028622F2D00900D5B162 /* Frameworks */,
+				F4B8028722F2D00900D5B162 /* Resources */,
+				4E2CF1B4E0EECDDFB6AAB9CC /* [CP] Embed Pods Frameworks */,
+				F4D6665A22F2D39800859371 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F4D6665422F2D39800859371 /* PBXTargetDependency */,
+			);
+			name = MovementTracker;
+			productName = MovementTracker;
+			productReference = F4B8028922F2D00900D5B162 /* MovementTracker.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F4B8029C22F2D00A00D5B162 /* MovementTrackerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F4B802B422F2D00A00D5B162 /* Build configuration list for PBXNativeTarget "MovementTrackerTests" */;
+			buildPhases = (
+				1FD6EBE2AACF271AC1E2FAF5 /* [CP] Check Pods Manifest.lock */,
+				F4B8029922F2D00A00D5B162 /* Sources */,
+				F4B8029A22F2D00A00D5B162 /* Frameworks */,
+				F4B8029B22F2D00A00D5B162 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F4B8029F22F2D00A00D5B162 /* PBXTargetDependency */,
+			);
+			name = MovementTrackerTests;
+			productName = MovementTrackerTests;
+			productReference = F4B8029D22F2D00A00D5B162 /* MovementTrackerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F4B802A722F2D00A00D5B162 /* MovementTrackerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F4B802B722F2D00A00D5B162 /* Build configuration list for PBXNativeTarget "MovementTrackerUITests" */;
+			buildPhases = (
+				CC05F9483980997275800F4E /* [CP] Check Pods Manifest.lock */,
+				F4B802A422F2D00A00D5B162 /* Sources */,
+				F4B802A522F2D00A00D5B162 /* Frameworks */,
+				F4B802A622F2D00A00D5B162 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F4B802AA22F2D00A00D5B162 /* PBXTargetDependency */,
+			);
+			name = MovementTrackerUITests;
+			productName = MovementTrackerUITests;
+			productReference = F4B802A822F2D00A00D5B162 /* MovementTrackerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		F4D6663F22F2D39700859371 /* NasladdinApi */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F4D6665722F2D39800859371 /* Build configuration list for PBXNativeTarget "NasladdinApi" */;
+			buildPhases = (
+				E1F5874581577862D9AC769F /* [CP] Check Pods Manifest.lock */,
+				F4D6663B22F2D39700859371 /* Headers */,
+				F4D6663C22F2D39700859371 /* Sources */,
+				F4D6663D22F2D39700859371 /* Frameworks */,
+				F4D6663E22F2D39700859371 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NasladdinApi;
+			productName = NasladdinApi;
+			productReference = F4D6664022F2D39700859371 /* NasladdinApi.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		F4D6664722F2D39700859371 /* NasladdinApiTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F4D6665B22F2D39800859371 /* Build configuration list for PBXNativeTarget "NasladdinApiTests" */;
+			buildPhases = (
+				B445E67E8ADCB34AD899D971 /* [CP] Check Pods Manifest.lock */,
+				F4D6664422F2D39700859371 /* Sources */,
+				F4D6664522F2D39700859371 /* Frameworks */,
+				F4D6664622F2D39700859371 /* Resources */,
+				383601C453BB7063437071E5 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F4D6664B22F2D39800859371 /* PBXTargetDependency */,
+				F4D6664D22F2D39800859371 /* PBXTargetDependency */,
+			);
+			name = NasladdinApiTests;
+			productName = NasladdinApiTests;
+			productReference = F4D6664822F2D39700859371 /* NasladdinApiTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F4B8028122F2D00900D5B162 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Simon Lebedev";
+				TargetAttributes = {
+					F4B8028822F2D00900D5B162 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					F4B8029C22F2D00A00D5B162 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = F4B8028822F2D00900D5B162;
+					};
+					F4B802A722F2D00A00D5B162 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = F4B8028822F2D00900D5B162;
+					};
+					F4D6663F22F2D39700859371 = {
+						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
+					};
+					F4D6664722F2D39700859371 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = F4B8028822F2D00900D5B162;
+					};
+				};
+			};
+			buildConfigurationList = F4B8028422F2D00900D5B162 /* Build configuration list for PBXProject "MovementTracker" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F4B8028022F2D00900D5B162;
+			productRefGroup = F4B8028A22F2D00900D5B162 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F4B8028822F2D00900D5B162 /* MovementTracker */,
+				F4B8029C22F2D00A00D5B162 /* MovementTrackerTests */,
+				F4B802A722F2D00A00D5B162 /* MovementTrackerUITests */,
+				F4D6663F22F2D39700859371 /* NasladdinApi */,
+				F4D6664722F2D39700859371 /* NasladdinApiTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F4B8028722F2D00900D5B162 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4B8029722F2D00A00D5B162 /* LaunchScreen.storyboard in Resources */,
+				F4B8029422F2D00A00D5B162 /* Assets.xcassets in Resources */,
+				F4B8029222F2D00900D5B162 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4B8029B22F2D00A00D5B162 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4B802A622F2D00A00D5B162 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4D6663E22F2D39700859371 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4D6664622F2D39700859371 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		05B876EC4205BC485C97450B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MovementTracker-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1FD6EBE2AACF271AC1E2FAF5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MovementTrackerTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		383601C453BB7063437071E5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NasladdinApiTests/Pods-NasladdinApiTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/RxAtomic/RxAtomic.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAtomic.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NasladdinApiTests/Pods-NasladdinApiTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4E2CF1B4E0EECDDFB6AAB9CC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MovementTracker/Pods-MovementTracker-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/RxAtomic/RxAtomic.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAtomic.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MovementTracker/Pods-MovementTracker-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B445E67E8ADCB34AD899D971 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NasladdinApiTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CC05F9483980997275800F4E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MovementTrackerUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E1F5874581577862D9AC769F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NasladdinApi-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F4B8028522F2D00900D5B162 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F450D94322F2E8FD00F5D07D /* MotionTracker.swift in Sources */,
+				F4B8028D22F2D00900D5B162 /* AppDelegate.swift in Sources */,
+				F450D94122F2E7F400F5D07D /* MotionTrackerViewController.swift in Sources */,
+				F450D93F22F2E71B00F5D07D /* MotionTrackerViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4B8029922F2D00A00D5B162 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4B802A222F2D00A00D5B162 /* MovementTrackerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4B802A422F2D00A00D5B162 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4B802AD22F2D00A00D5B162 /* MovementTrackerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4D6663C22F2D39700859371 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F450D93622F2DA7600F5D07D /* DictionaryCodable.swift in Sources */,
+				F4D6665F22F2D43D00859371 /* NasladdinRepository.swift in Sources */,
+				F450D93822F2DF7400F5D07D /* BaseRepository.swift in Sources */,
+				F450D93422F2D6EE00F5D07D /* Models.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4D6664422F2D39700859371 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F450D93A22F2E48100F5D07D /* Models.swift in Sources */,
+				F450D93922F2E37F00F5D07D /* NasladdinRepository.swift in Sources */,
+				F450D93C22F2E48600F5D07D /* DictionaryCodable.swift in Sources */,
+				F450D93B22F2E48300F5D07D /* BaseRepository.swift in Sources */,
+				F4D6665022F2D39800859371 /* NasladdinApiTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F4B8029F22F2D00A00D5B162 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F4B8028822F2D00900D5B162 /* MovementTracker */;
+			targetProxy = F4B8029E22F2D00A00D5B162 /* PBXContainerItemProxy */;
+		};
+		F4B802AA22F2D00A00D5B162 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F4B8028822F2D00900D5B162 /* MovementTracker */;
+			targetProxy = F4B802A922F2D00A00D5B162 /* PBXContainerItemProxy */;
+		};
+		F4D6664B22F2D39800859371 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F4D6663F22F2D39700859371 /* NasladdinApi */;
+			targetProxy = F4D6664A22F2D39800859371 /* PBXContainerItemProxy */;
+		};
+		F4D6664D22F2D39800859371 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F4B8028822F2D00900D5B162 /* MovementTracker */;
+			targetProxy = F4D6664C22F2D39800859371 /* PBXContainerItemProxy */;
+		};
+		F4D6665422F2D39800859371 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F4D6663F22F2D39700859371 /* NasladdinApi */;
+			targetProxy = F4D6665322F2D39800859371 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F4B8029022F2D00900D5B162 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F4B8029122F2D00900D5B162 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F4B8029522F2D00A00D5B162 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F4B8029622F2D00A00D5B162 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F4B802AF22F2D00A00D5B162 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F4B802B022F2D00A00D5B162 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F4B802B222F2D00A00D5B162 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DBC839F520FA2C06E1B72120 /* Pods-MovementTracker.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MovementTracker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = kg.lebedev.MovementTracker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F4B802B322F2D00A00D5B162 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FB430FD16AC840FAC074AD8C /* Pods-MovementTracker.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MovementTracker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = kg.lebedev.MovementTracker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F4B802B522F2D00A00D5B162 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 162481B10D09C3E2616E00C8 /* Pods-MovementTrackerTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MovementTrackerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = kg.lebedev.MovementTrackerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MovementTracker.app/MovementTracker";
+			};
+			name = Debug;
+		};
+		F4B802B622F2D00A00D5B162 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4FE1E7B008CC3774DE44010E /* Pods-MovementTrackerTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MovementTrackerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = kg.lebedev.MovementTrackerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MovementTracker.app/MovementTracker";
+			};
+			name = Release;
+		};
+		F4B802B822F2D00A00D5B162 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AEEFFDD55FF4F09C2596FCA6 /* Pods-MovementTrackerUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MovementTrackerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = kg.lebedev.MovementTrackerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MovementTracker;
+			};
+			name = Debug;
+		};
+		F4B802B922F2D00A00D5B162 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7A5D3D383509A41597135581 /* Pods-MovementTrackerUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MovementTrackerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = kg.lebedev.MovementTrackerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MovementTracker;
+			};
+			name = Release;
+		};
+		F4D6665822F2D39800859371 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 668EEBC475F4FAE742FD8E9A /* Pods-NasladdinApi.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = NasladdinApi/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = kg.lebedev.NasladdinApi;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F4D6665922F2D39800859371 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 53C0B8A5C8C4214801EA1453 /* Pods-NasladdinApi.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = NasladdinApi/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = kg.lebedev.NasladdinApi;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F4D6665C22F2D39800859371 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5736F2A42E294D8DCF48D08A /* Pods-NasladdinApiTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = NasladdinApiTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = kg.lebedev.NasladdinApiTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MovementTracker.app/MovementTracker";
+			};
+			name = Debug;
+		};
+		F4D6665D22F2D39800859371 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F09C1A272580FD6EDCD6FCB5 /* Pods-NasladdinApiTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = NasladdinApiTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = kg.lebedev.NasladdinApiTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MovementTracker.app/MovementTracker";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F4B8028422F2D00900D5B162 /* Build configuration list for PBXProject "MovementTracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F4B802AF22F2D00A00D5B162 /* Debug */,
+				F4B802B022F2D00A00D5B162 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F4B802B122F2D00A00D5B162 /* Build configuration list for PBXNativeTarget "MovementTracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F4B802B222F2D00A00D5B162 /* Debug */,
+				F4B802B322F2D00A00D5B162 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F4B802B422F2D00A00D5B162 /* Build configuration list for PBXNativeTarget "MovementTrackerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F4B802B522F2D00A00D5B162 /* Debug */,
+				F4B802B622F2D00A00D5B162 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F4B802B722F2D00A00D5B162 /* Build configuration list for PBXNativeTarget "MovementTrackerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F4B802B822F2D00A00D5B162 /* Debug */,
+				F4B802B922F2D00A00D5B162 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F4D6665722F2D39800859371 /* Build configuration list for PBXNativeTarget "NasladdinApi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F4D6665822F2D39800859371 /* Debug */,
+				F4D6665922F2D39800859371 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F4D6665B22F2D39800859371 /* Build configuration list for PBXNativeTarget "NasladdinApiTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F4D6665C22F2D39800859371 /* Debug */,
+				F4D6665D22F2D39800859371 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F4B8028122F2D00900D5B162 /* Project object */;
+}
