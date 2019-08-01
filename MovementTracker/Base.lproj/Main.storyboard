@@ -41,10 +41,10 @@
             </objects>
             <point key="canvasLocation" x="-434" y="-118"/>
         </scene>
-        <!--View Controller-->
+        <!--Motion List View Controller-->
         <scene sceneID="oUV-sp-xum">
             <objects>
-                <viewController id="Oxx-vd-qrJ" sceneMemberID="viewController">
+                <viewController id="Oxx-vd-qrJ" customClass="MotionListViewController" customModule="MovementTracker" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="grM-lo-f4M">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

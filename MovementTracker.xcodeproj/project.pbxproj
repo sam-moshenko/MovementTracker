@@ -12,6 +12,8 @@
 		62DAE62EB4A43A4D7F073C48 /* Pods_NasladdinApi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E4E5185A796DB7651FD3475 /* Pods_NasladdinApi.framework */; };
 		9F2F13E720B40F36DB27B12A /* Pods_MovementTracker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCCCEC931907430D35799ECD /* Pods_MovementTracker.framework */; };
 		DEA74A186B0608E6112E4440 /* Pods_NasladdinApiTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEDA88C9F1EBC9A1E80212E4 /* Pods_NasladdinApiTests.framework */; };
+		F40C96A122F300B9007E6791 /* MotionObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = F40C96A022F300B9007E6791 /* MotionObject.swift */; };
+		F40C96A522F304F6007E6791 /* MotionListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F40C96A422F304F6007E6791 /* MotionListViewController.swift */; };
 		F450D93422F2D6EE00F5D07D /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = F450D93322F2D6EE00F5D07D /* Models.swift */; };
 		F450D93622F2DA7600F5D07D /* DictionaryCodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F450D93522F2DA7600F5D07D /* DictionaryCodable.swift */; };
 		F450D93822F2DF7400F5D07D /* BaseRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F450D93722F2DF7400F5D07D /* BaseRepository.swift */; };
@@ -104,6 +106,8 @@
 		DBC839F520FA2C06E1B72120 /* Pods-MovementTracker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MovementTracker.debug.xcconfig"; path = "Target Support Files/Pods-MovementTracker/Pods-MovementTracker.debug.xcconfig"; sourceTree = "<group>"; };
 		DCCCEC931907430D35799ECD /* Pods_MovementTracker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MovementTracker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F09C1A272580FD6EDCD6FCB5 /* Pods-NasladdinApiTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NasladdinApiTests.release.xcconfig"; path = "Target Support Files/Pods-NasladdinApiTests/Pods-NasladdinApiTests.release.xcconfig"; sourceTree = "<group>"; };
+		F40C96A022F300B9007E6791 /* MotionObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionObject.swift; sourceTree = "<group>"; };
+		F40C96A422F304F6007E6791 /* MotionListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionListViewController.swift; sourceTree = "<group>"; };
 		F450D93322F2D6EE00F5D07D /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
 		F450D93522F2DA7600F5D07D /* DictionaryCodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryCodable.swift; sourceTree = "<group>"; };
 		F450D93722F2DF7400F5D07D /* BaseRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRepository.swift; sourceTree = "<group>"; };
@@ -210,10 +214,19 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		F40C96A322F304E5007E6791 /* MotionList */ = {
+			isa = PBXGroup;
+			children = (
+				F40C96A422F304F6007E6791 /* MotionListViewController.swift */,
+			);
+			path = MotionList;
+			sourceTree = "<group>";
+		};
 		F450D93D22F2E70000F5D07D /* MotionTracker */ = {
 			isa = PBXGroup;
 			children = (
 				F450D94222F2E8FD00F5D07D /* MotionTracker.swift */,
+				F40C96A022F300B9007E6791 /* MotionObject.swift */,
 				F450D93E22F2E71B00F5D07D /* MotionTrackerViewModel.swift */,
 				F450D94022F2E7F400F5D07D /* MotionTrackerViewController.swift */,
 			);
@@ -249,6 +262,7 @@
 		F4B8028B22F2D00900D5B162 /* MovementTracker */ = {
 			isa = PBXGroup;
 			children = (
+				F40C96A322F304E5007E6791 /* MotionList */,
 				F450D93D22F2E70000F5D07D /* MotionTracker */,
 				F4B8028C22F2D00900D5B162 /* AppDelegate.swift */,
 				F4B8029022F2D00900D5B162 /* Main.storyboard */,
@@ -678,7 +692,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F40C96A122F300B9007E6791 /* MotionObject.swift in Sources */,
 				F450D94322F2E8FD00F5D07D /* MotionTracker.swift in Sources */,
+				F40C96A522F304F6007E6791 /* MotionListViewController.swift in Sources */,
 				F4B8028D22F2D00900D5B162 /* AppDelegate.swift in Sources */,
 				F450D94122F2E7F400F5D07D /* MotionTrackerViewController.swift in Sources */,
 				F450D93F22F2E71B00F5D07D /* MotionTrackerViewModel.swift in Sources */,

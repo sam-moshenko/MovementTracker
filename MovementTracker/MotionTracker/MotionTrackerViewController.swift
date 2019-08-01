@@ -13,7 +13,7 @@ import RxCocoa
 class MotionTrackerViewController: UIViewController {
     @IBOutlet weak var statusLabel: UILabel!
     let disposeBag = DisposeBag()
-    let viewModel = MotionTrackerViewModel()
+    let viewModel = MotionTrackerViewModel(motionTracker: MotionTracker())
     
     override func viewDidLoad() {
         super.viewDidLoad()

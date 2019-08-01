@@ -9,13 +9,27 @@
 import Foundation
 import CoreMotion
 import RxSwift
+import RealmSwift
 
 public class MotionTracker {
-    public let motionSecondsObservable = PublishSubject<Int>()
-    public let noMotionSecondsObservable = PublishSubject<Int>()
+    private let disposeBag = DisposeBag()
+    
+    private let successfullMovementTime = 10
     private let minimumChange = 1.0
     private let manager = CMMotionManager()
+    private let realm = try! Realm()
     private var timer: Timer?
+    
+    private let motionSecondsObservable = PublishSubject<Int>()
+    private let noMotionSecondsObservable = PublishSubject<Int>()
+    
+    public let movementSuccessfull = PublishSubject<Void>()
+    public let movementStarted = PublishSubject<Void>()
+    public let noMovement = PublishSubject<Void>()
+    
+    init() {
+        setupMotionTracker()
+    }
     
     public func trackMotion() {
         if manager.isDeviceMotionAvailable {
@@ -65,5 +79,36 @@ public class MotionTracker {
     private func continueMotion(_ motionSeconds: Int, noMotionSeconds: Int) {
         motionSecondsObservable.onNext(motionSeconds)
         noMotionSecondsObservable.onNext(noMotionSeconds)
+    }
+    
+    private func setupMotionTracker() {
+        Observable.combineLatest(motionSecondsObservable, noMotionSecondsObservable)
+            .do(onNext: { [weak self] motionSeconds, noMotionSeconds in
+                guard let self = self else { return }
+                let isFactorOfSuccessfullMovementTime = motionSeconds % self.successfullMovementTime == 0
+                if (isFactorOfSuccessfullMovementTime && motionSeconds != 0) {
+                    self.movementSuccessfull.onNext(())
+                    self.saveMotion(motionSeconds: motionSeconds)
+                }
+            })
+            .do(onNext: { [weak self] motionSeconds, noMotionSeconds in
+                guard let self = self else { return }
+                if (motionSeconds > 0) {
+                    self.movementStarted.onNext(())
+                }
+            })
+            .do(onNext: { [weak self] motionSeconds, noMotionSeconds in
+                guard let self = self else { return }
+                if (motionSeconds == 0 && noMotionSeconds >= 5) {
+                    self.noMovement.onNext(())
+                }
+            })
+            .subscribe().disposed(by: disposeBag)
+    }
+    
+    private func saveMotion(motionSeconds: Int) {
+        let motion = MotionObject()
+        motion.motionSeconds = motionSeconds
+        realm.add(motion)
     }
 }

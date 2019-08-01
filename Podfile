@@ -6,7 +6,7 @@ target 'MovementTracker' do
   use_frameworks!
 
   # Pods for MovementTracker
-  
+  pod 'RealmSwift'
   pod 'RxSwift'
   pod 'RxCocoa'
 
